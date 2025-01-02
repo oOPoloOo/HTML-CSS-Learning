@@ -1,0 +1,110 @@
+   
+/* -- Primary settings */
+   header{
+        width: 100%;
+        height: 60px;
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        box-sizing: border-box;
+        padding: 0 20px;
+        
+
+        > div:nth-child(1){
+            display: flex;
+            align-items: center;
+            height: 100%;
+            gap: 20px;
+
+            > img{
+                height: 60%;
+                width: auto;
+                max-height: 72px;
+                max-width: 250px;
+            
+            }
+        }
+
+        div:nth-child(2) {
+            display: flex;           
+            align-items: center;
+            justify-content: end;
+            overflow:hidden;           
+
+            height: 100%;
+            gap: 20px;
+           
+            > nav  
+            {
+                > img{
+                    height: 40%;
+                    width: auto;        
+                }
+                
+                > ul
+                {
+                    display: flex;
+                    align-items: center;
+                    height: 100%;
+                    gap: 20px;
+
+                    list-style-type: none;
+                
+                    > li > a
+                    {
+                       
+                        visibility: hidden;
+                        text-decoration: none;
+                        color: black;
+                    }
+                }
+            
+            }
+        
+        }
+    }
+
+    section#hero
+    {
+        padding-top: 100px;
+        background-image: linear-gradient(
+        to right bottom,
+        rgb(22, 22, 180),
+        rgb(20, 198, 127)
+        );
+    
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+/* --Meddia query (Mobile first) */
+  
+    @media (min-width: 576px){       
+       
+    
+    }
+
+    @media (min-width: 992px){ 
+        header
+        {
+             div:nth-child(2)
+             { 
+                > nav > ul > li > a
+                {                 
+                    visibility: visible;
+                }
+
+                 > img
+                 {
+                     display: none;
+                 }
+            }
+        }
+    }
+
+
+    
+
