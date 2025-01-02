@@ -1,4 +1,6 @@
-   
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
 /* -- Primary settings */
 
    body
@@ -79,15 +81,29 @@
         justify-content: space-between;
         gap: 20px;
 
-       >div:nth-child(1)
+       > div:nth-child(1)
        {
-            margin-left: 10px;
+            margin-left: 20px;
+            margin-bottom: 50px;
+             
+            > h2 
+            {                
+                font-size: 18px;
+                color: rgb(243, 117, 138);             
+            }
+            > h1 
+            {                
+                font-size: 60px;
+                margin: 10px 0px;            
+            }
+
            
        }     
         
         .container{
             width: 120px;
         }
+
         .container > .matrioska {
           
             width: 300px;       
@@ -101,9 +117,97 @@
                 height: 270px;  
                 position:fixed;                              
             }  
-        }       
+        }   
+        
+     
     }
     
+    .roundButton{   
+        
+        border: 3px solid orangered;
+        height: 15px;
+        padding: 15px 0;
+        width: 130px;
+        border-radius: 20rem;
+        display: block;
+        text-align: center;
+        font-size: 15px;
+        font-weight: bold;
+    }
+
+    #orangeLine {
+        height: 200px;
+        width: 100%;
+        /* background-color: orangered; */
+        background-image: linear-gradient(to right, red , rgb(255, 255, 0));
+        >div
+        {
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            height: 100%;
+            margin: 0 20px;
+            
+            >h1 {
+                font-size: 30px;
+            }
+
+        }
+    }
+
+    #middleIcons
+    {
+         display: grid;
+         height: 100%;     
+         grid-template-columns: 1fr 1fr;
+         grid-template-rows: 1fr 1fr;
+
+         margin: 40px 25px;
+         padding-left: 20px;      
+         
+        >i
+        { 
+            font-size: 30px; 
+           padding: 10px;                  
+        }
+    }
+
+    #auction{
+
+       >div:nth-child(1)
+       {
+            margin: 0 20px ;
+
+            >h2{font-size: 40px;}
+            >p
+            {
+                font-size: 22px;
+                >span{ text-decoration: underline;}
+            }
+       } 
+        
+       .allCards{ margin: 20px;}
+       
+       .carousel-inner{ display: flex; float: left; gap: 10px;}
+       
+       [class = "cardWrapper"]
+       {        
+            width: 20rem;
+        
+
+            .cardBody
+            { 
+                height: 90px; 
+                margin-top: -5px; 
+                padding: 10px;
+                background-color: lightgray; 
+                border-end-end-radius: 10px;
+                border-end-start-radius: 10px;
+            }
+           
+            .cardText{ margin: 0; }          
+       }
+    }
 
 /* --Meddia query (Mobile first) */
   
